@@ -1,0 +1,125 @@
+/***************Start of: General Styles***********************/
+h1, h2 {
+    text-align: right;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.light-blue {
+    color: #02b3e4;
+}
+
+.dark-blue {
+    color: #2d3c49;
+}
+
+.grey {
+    color: #7d97ad;
+}
+/***************End of: General Styles***********************/
+
+header {
+    padding-top: 20px;
+    border-bottom: 3px solid #7d97ad;
+}
+
+.large-img {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+}
+
+.projects-title {
+    padding: 10px 0;
+}
+
+/***************Start of: Cards Styles***********************/
+.card {
+    margin: 10px 0;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-img-top {
+    border: solid rgba(0,0,0,.125);
+    border-width: 0 1px 0 0;
+}
+/***************End of: Cards Styles***********************/
+
+footer{
+    margin-top: 40px;
+    padding: 10px;
+    border-top: 1px solid #7d97ad;
+}
+
+/***************Start of: Media Query***********************/
+@media screen and (min-width: 1200px) {
+ /**************************************
+ * Large Screen
+ * ------------------------------------
+ * Remove margin from cards container
+ * Remove padding around cards
+ *************************************/
+    .cards-container {
+        margin: 0;
+    }
+
+    .cards-container .col-lg-12 {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1199px){
+/**************************************
+* Small Desktop screen, Tablet, Mobile
+* ------------------------------------
+* Decrease general font size
+*************************************/
+    body {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px){
+/**************************************
+* Tablet, Mobile
+* ------------------------------------
+* Add top margin to Project title and
+* card title
+* Remove right border from card image
+* and add bottom border
+*************************************/
+    .projects-title{
+        margin-top: 20px;
+    }
+
+    .card-img-top {
+        border-width: 0 0 1px 0;
+    }
+
+    .card-title {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 640px){
+/**************************************
+* Mobile
+* ------------------------------------
+* Decrease header title font size
+*************************************/
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}
+/***************End of: Media Query***********************/
